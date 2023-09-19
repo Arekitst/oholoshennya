@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Сайт Оголошень</title>
+</head>
+<body>
+<h1> <span class="element">Оголошення</span></h1>
+<br>
+<p ><span class="ele">19 Грудня 2023 року о 12:00 на шкільному дворі Ліцею №157 та Гімназії №163 відбудеться концерт на честь Святого Миколая.</span></p>
+<p class="elem">З собою терба мати воду. Будуть виступати аніматори  запрошуємо учнів з 1-7 Класи.</p>
+<br>
+<br>
+<b class="element"> <span class="element">Голова Індустріального района</span></b>
+<br>
+<br>
+<center>
+	<button id="add-class-button">Переглянути розпланування тексту</button>
+</center>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+      var button = document.getElementById("add-class-button");
+      var elements = document.querySelectorAll(".element");
+      var eleElement = document.querySelector(".ele");
+      var elemElement = document.querySelector(".elem");
+
+      button.addEventListener("click", function() {
+        elements.forEach(function(element) {
+          element.classList.add("one");
+        });
+
+        eleElement.classList.add("Two");
+        elemElement.classList.add("the");
+      });
+    });
+</script>
+
+</body>
+</html>
